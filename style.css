@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "InterLight";
+  src: url("./fonts/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterBold";
+  src: url("./fonts/Inter-Bold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: brown;
+  font-family: "InterLight";
+}
+
+.header {
+  margin: 40px auto;
+  width: 600px;
+}
+
+.header_title {
+  font-family: InterBold, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.main_list {
+    display: grid;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    gap: 20px;
+}
+
+.main_item {
+    margin: auto;
+    padding: 10px 0 10px;
+}
